@@ -29,3 +29,14 @@ mysql -u root -p < create-db.sql
 time python3 script.py
 ```
 
+## Refresh table size and Check table size
+```
+mysql -u root -p  < create-db.sql
+```
+
+## Migrate DB from existing to RDS host
+```
+chmod +x migratedump.sh
+./migratedump.sh
+```
+
