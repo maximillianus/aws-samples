@@ -10,12 +10,14 @@ This is a repository for samples related to AWS
 - nginx-reverse-proxy
 - sample-amplify
 - sample-ec2 - **done**
-- sample-ec2-webserver
+- sample-ec2-webserver - **done**
 - sample-ec2-wordpress
 - sample-elasticache
 - sample-flask-api - **done**
 - sample-php-api
 - sample-haproxy
+- sample-ldap-server
+- sample-nfs-server
 - sample-nodejs-api - **done**
 - sample-rds - **done**
 - sample-react
@@ -31,6 +33,6 @@ This is a repository for samples related to AWS
 - sample-machine-learning-pytorch
 - sample-machine-learning-mxnet
 - sample-machine-learning-GPU
-- simple-apache
-- simple-nginx
+- simple-apache - **done**
+- simple-nginx - **done**
 - vhost-multiport - **done**
