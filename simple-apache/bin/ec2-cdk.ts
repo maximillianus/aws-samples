@@ -18,7 +18,10 @@ new EC2ApacheWebServer(app, 'EC2ApacheWebServer', {
   /* Uncomment the next line if you know exactly what Account and Region you
   * want to deploy the stack to. */
   description: 'This is Apache Web Server'
-  ,env: { account: '860873776111', region: 'ap-southeast-1' }
+  ,env: {
+    account: process.env.CDK_DEFAULT_ACCOUNT, 
+    region: process.env.CDK_DEFAULT_REGION 
+  }
   ,tags: {
     project: 'EC2ApacheWebServer',
     environment: 'test'

@@ -39,7 +39,7 @@ export class CdkEc2Stack extends cdk.Stack {
         'Allows HTTPS access from Internet'
       )
 
-      // const role = iam.Role.fromRoleArn(this, 'Role', 'arn:aws:iam::860873776111:role/AWSEC2SSMDefaultManagedRole', {
+      // const role = iam.Role.fromRoleArn(this, 'Role', `arn:aws:iam::${process.env.CDK_DEFAULT_ACCOUNT}:role/AWSEC2SSMDefaultManagedRole`, {
       //   // Set 'mutable' to 'false' to use the role as-is and prevent adding new
       //   // policies to it. The default is 'true', which means the role may be
       //   // modified as part of the deployment.

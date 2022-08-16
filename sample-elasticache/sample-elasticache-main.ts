@@ -6,6 +6,9 @@ import { SampleElasticacheStack } from '../lib/sample-elasticache-stack';
 const app = new cdk.App();
 new SampleElasticacheStack(app, 'SampleElasticacheStack', {
 
-  env: { account: '860873776111', region: 'ap-southeast-1' },
+    env: {
+        account: process.env.CDK_DEFAULT_ACCOUNT, 
+        region: process.env.CDK_DEFAULT_REGION 
+      },
 
 });
