@@ -2,6 +2,13 @@
 
 This will install LAMP stack PHP, MySQL, and Apache 
 
+## AWS CDK
+Included in this repository is also aws cdk implementation for this:
+- `bin`
+  - directory for app code
+- `lib`
+  - directory for stack code and user-data code
+
 ## Initial Installation
 ```
 sudo yum update -y
