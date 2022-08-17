@@ -36,3 +36,17 @@ This is a repository for samples related to AWS
 - simple-apache - **done**
 - simple-nginx - **done**
 - vhost-multiport - **done**
+
+
+## Journal Log
+
+### 2022-08-17
+- CDK Notes
+  - refreshing about aws-cdk
+  - learning about single app - multistack deployment
+  - learning about multi app and multi project repo structure
+  - learning about cdk pipeline
+  - learning about deploying EC2 using user-data
+  - learning about `cdk.json` and `cdk.context.json`
+  - learning how `package.json` can be used in CDK
+  - utilize multiple git credentials, prettier
