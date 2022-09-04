@@ -5,14 +5,12 @@ import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import {readFileSync} from 'fs';
 
 
-
-
 export class EC2ApacheWebServer extends cdk.Stack {
     constructor(scope: Construct, id: string, props?: cdk.StackProps) {
         super(scope, id, props);
-  
+
         // The code that defines your stack goes here
-    
+
         // example resource
         // const queue = new sqs.Queue(this, 'GenericCdkQueue', {
         //   visibilityTimeout: cdk.Duration.seconds(300)
@@ -63,10 +61,12 @@ export class EC2ApacheWebServer extends cdk.Stack {
             description: 'Ip Address of EC2',
             exportName: 'ec2PublicDNS',
         });
-  
-  console.log('ec2PublicIp 👉', ec2PublicIPOutput.value);
-  console.log('ec2PublicDNS 👉', ec2PublicDNSOutput.value);
-  
+
+        console.log('ec2PublicIp 👉', ec2PublicIPOutput.value);
+        console.log('ec2PublicDNS 👉', ec2PublicDNSOutput.value);
+
+        console.log(cdk.Aws.REGION)
+
 
 
     }

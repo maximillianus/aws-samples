@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
-import * as cdk from '@aws-cdk/core';
-import { CdkEc2Stack } from '../lib/cdk-ec2-stack';
+import * as cdk from 'aws-cdk-lib';
+import { CdkEc2Stack } from '../lib/aws-cdk-ec2-stack';
 
 const app = new cdk.App();
 new CdkEc2Stack(app, 'CdkEc2Stack', {
@@ -16,8 +16,8 @@ new CdkEc2Stack(app, 'CdkEc2Stack', {
   /* Uncomment the next line if you know exactly what Account and Region you
    * want to deploy the stack to. */
   env: {
-    account: process.env.CDK_DEFAULT_ACCOUNT, 
-    region: process.env.CDK_DEFAULT_REGION 
+    account: process.env.CDK_DEFAULT_ACCOUNT,
+    region: process.env.CDK_DEFAULT_REGION
   },
 
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */

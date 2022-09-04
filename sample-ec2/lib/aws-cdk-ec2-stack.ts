@@ -1,8 +1,9 @@
-import * as cdk from '@aws-cdk/core';
-import * as ec2 from '@aws-cdk/aws-ec2';
+import * as cdk from 'aws-cdk-lib';
+import { Construct } from "constructs";
+import * as ec2 from 'aws-cdk-lib/aws-ec2';
 
 export class CdkEc2Stack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
     // The code that defines your stack goes here
@@ -26,13 +27,13 @@ export class CdkEc2Stack extends cdk.Stack {
         ec2.Port.tcp(22),
         'Allows SSH access from Internet'
       )
-  
+
       securityGroup.addIngressRule(
         ec2.Peer.anyIpv4(),
         ec2.Port.tcp(80),
         'Allows HTTP access from Internet'
       )
-  
+
       securityGroup.addIngressRule(
         ec2.Peer.anyIpv4(),
         ec2.Port.tcp(443),
@@ -66,7 +67,7 @@ export class CdkEc2Stack extends cdk.Stack {
 
         // keyName: 'simple-instance-1-key', // we will create this in the console before we deploy
       })
-  
+
 
 
 
