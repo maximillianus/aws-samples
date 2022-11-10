@@ -74,7 +74,7 @@ export class SampleEC2WordpressStack extends cdk.Stack {
     const cfnCreationPolicy: cdk.CfnCreationPolicy = {
       resourceSignal: {
         count: 1,
-        timeout: 'PT5M',
+        timeout: 'PT10M',
       },
     };
 
