@@ -1,0 +1,41 @@
+{
+    "NetworkInterfaces": [
+        {
+            "AssociatePublicIpAddress": true,
+            "DeleteOnTermination": true,
+            "Description": "",
+            "DeviceIndex": 0,
+            "Groups": [
+                "sg-ssh-access"
+            ],
+            "InterfaceType": "interface",
+            "Ipv6Addresses": [],
+            "SubnetId": "subnet-1234",
+            "NetworkCardIndex": 0
+        }
+    ],
+    "BlockDeviceMappings": [
+        {
+            "DeviceName": "/dev/sda1",
+            "Ebs": {
+                "Encrypted": false,
+                "DeleteOnTermination": true,
+                "VolumeSize": 8,
+                "VolumeType": "gp2"
+            }
+        }
+    ],
+    "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::123456789012:instance-profile/AWSEC2_CW_Agent"
+    },
+    "ImageId": "ami-1234",
+    "InstanceType": "t3a.micro",
+    "KeyName": "isengard-apradana-test1",
+    "TagSpecifications": [{
+        "ResourceType": "instance",
+        "Tags": [{
+            "Key":"Name",
+            "Value":"memory-asg-server"
+        }]
+    }]
+}
