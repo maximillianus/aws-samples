@@ -35,7 +35,7 @@
         "ResourceType": "instance",
         "Tags": [{
             "Key":"Name",
-            "Value":"memory-asg-server"
+            "Value":"memory-ec2-server"
         }]
     }]
 }

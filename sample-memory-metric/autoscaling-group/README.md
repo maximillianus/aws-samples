@@ -7,7 +7,7 @@ This guide describes how to create autoscaling based on memory metric
    ```
    aws ssm put-parameter --name /cwagent/linux/asg-memory --value file://ssm-cw-agent-parameter.json --type String
    ```
-2. Create basic AMI using [Packer](https://www.packer.io/). [Packer file](./aws-ubuntu-asg-memory.pkr.hcl)
+2. Create basic AMI using u [Packer](https://www.packer.io/). [Packer file](./aws-ubuntu-asg-memory.pkr.hcl) (Alternatively, there you can include script `userdata.sh` in this launch template)
 3. Run shellscript [`ec2-asg-with-memory-metric.sh`](./ec2-asg-with-memory-metric.sh)
 4. Do note that some configuration in `memory-lt.json` needs to be adjusted to your own:
    1. Security Group ID (Create security group with SSH access)
