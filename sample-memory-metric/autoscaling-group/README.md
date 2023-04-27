@@ -14,6 +14,7 @@ This guide describes how to create autoscaling based on memory metric
    2. SubnetId
    3. IAM Instance Profile (enable `CloudWatchAgentServerPolicy`, `CloudWatchAgentAdminPolicy`)
    4. AMI ID (Get from AMI created by Packer)
+   5. KeyPair Name
 5. Update instance in Autoscaling Group to 1 (min-size 1, max-size 2)
 6. Get the instance's Public IP
 7. Run stress test on memory

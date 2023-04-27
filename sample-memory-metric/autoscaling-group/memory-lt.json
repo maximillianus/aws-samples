@@ -30,7 +30,7 @@
     },
     "ImageId": "ami-1234",
     "InstanceType": "t3a.micro",
-    "KeyName": "isengard-apradana-test1",
+    "KeyName": "your-keypair",
     "TagSpecifications": [{
         "ResourceType": "instance",
         "Tags": [{
