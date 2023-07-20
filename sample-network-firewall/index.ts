@@ -75,16 +75,16 @@ export class SampleNetworkFirewall extends cdk.Stack {
     );
     cdk.Tags.of(sshOnlySG).add('Name', this.stackName + '-SG')
 
-    const ec2Role = iam.Role.fromRoleName(
-      this,
-      "ec2-instance-role",
-      "AWSEC2SSMDefaultManagedRole"
-    );
+    // Having Role is optional, I am omitting it for now
+    // const ec2Role = iam.Role.fromRoleName(
+    //   this,
+    //   "ec2-instance-role",
+    //   "AWSEC2SSMDefaultManagedRole"
+    // );
 
     const ec2Instance = new ec2.Instance(this, 'test-network-cdk-ec2', {
       vpc: vpc,
       securityGroup: sshOnlySG,
-      role: ec2Role,
       vpcSubnets: {
         subnetGroupName: 'Customer-Subnet'
       },
@@ -93,7 +93,6 @@ export class SampleNetworkFirewall extends cdk.Stack {
         name: 'ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64*',
         owners: ['amazon']
       }),
-      keyName: 'isengard-apradana-test1',
       blockDevices: [
         {
           deviceName: '/dev/sda1',
