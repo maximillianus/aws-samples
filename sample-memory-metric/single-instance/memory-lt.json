@@ -37,5 +37,6 @@
             "Key":"Name",
             "Value":"memory-ec2-server"
         }]
-    }]
+    }],
+    "UserData": "IyEvYmluL2Jhc2gKcmVnaW9uPWFwLXNvdXRoZWFzdC0xCnNzbV9wYXJhbV9uYW1lPXNzbTovY3dhZ2VudC9saW51eC9iYXNpYy0yCmFwdC1nZXQgdXBkYXRlIC15CmFwdC1nZXQgaW5zdGFsbCAteSB3Z2V0IHN0cmVzcwplY2hvIERvd25sb2FkaW5nIENsb3Vkd2F0Y2ggQWdlbnQKc2xlZXAgMwp3Z2V0IGh0dHBzOi8vczMuJHJlZ2lvbi5hbWF6b25hd3MuY29tL2FtYXpvbmNsb3Vkd2F0Y2gtYWdlbnQtJHJlZ2lvbi91YnVudHUvYW1kNjQvbGF0ZXN0L2FtYXpvbi1jbG91ZHdhdGNoLWFnZW50LmRlYgplY2hvIEluc3RhbGxpbmcgQ2xvdWR3YXRjaCBBZ2VudApkcGtnIC1pIC1FIC4vYW1hem9uLWNsb3Vkd2F0Y2gtYWdlbnQuZGViCmVjaG8gU3RhcnRpbmcgQ2xvdWR3YXRjaCBBZ2VudApzbGVlcCAzCi9vcHQvYXdzL2FtYXpvbi1jbG91ZHdhdGNoLWFnZW50L2Jpbi9hbWF6b24tY2xvdWR3YXRjaC1hZ2VudC1jdGwgLWEgZmV0Y2gtY29uZmlnIC1tIGVjMiAtYyAkc3NtX3BhcmFtX25hbWUgLXM="
 }
