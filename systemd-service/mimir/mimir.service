@@ -1,0 +1,17 @@
+[Unit]
+Description=Grafana mimir is horizontally scalable, highly available, multi-tenant, long term Prometheus storage
+Documentation=https://grafana.com/oss/mimir/
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=mimir
+Group=mimir
+Type=simple
+ExecStart=/usr/local/bin/mimir \
+    --config.file /etc/mimir/demo.yml \
+    --activity-tracker.filepath /var/lib/mimir/metrics-activity.log \
+    --ruler.rule-path /var/lib/mimir/data-ruler/
+
+[Install]
+WantedBy=multi-user.target
